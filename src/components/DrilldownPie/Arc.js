@@ -2,13 +2,18 @@ import { useState } from "react";
 import * as d3 from "d3";
 import styled from "styled-components";
 
+/* fill: ${({ index }) => d3.schemePaired[index]}; */
 const Path = styled.path`
-  fill: ${({ index }) => d3.schemePaired[index]};
+  fill: ${({ level, prevIndex, index }) => {
+    return level === 4
+      ? d3.schemePaired[index]
+      : d3.color(d3.schemePaired[prevIndex]).brighter(index);
+  }};
   cursor: pointer;
   stroke: black;
 `;
 
-const Arc = ({ arcData }) => {
+const Arc = ({ arcData, onClick }) => {
   const [r, setR] = useState(0);
   const arc = d3
     .arc()
@@ -24,8 +29,11 @@ const Arc = ({ arcData }) => {
     <Path
       d={arc(arcData)}
       index={arcData.data.index}
+      level={arcData.data.level}
+      prevIndex={arcData.data.prevIndex}
       onMouseOver={onMouseOver}
       onMouseOut={onMouseOut}
+      onClick={onClick}
     />
   );
 };
