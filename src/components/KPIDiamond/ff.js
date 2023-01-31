@@ -1,33 +1,9 @@
 import { select } from "d3";
 
-const ff = () => {
-  const data = {
-    n1: { n: 3, color: "#E2B465" },
-    n2: { n: 3, color: "#E2B465" },
-    n3: { n: 3, color: "#E2B465" },
-    n4: { n: 3, color: "#E2B465" },
-    n5: { n: 3, color: "#E2B465" },
-    n6: { n: 3, color: "#E2B465" },
-    n7: { n: 3, color: "#E2B465" },
-    n8: { n: 3, color: "#E2B465" },
-    n9: { n: 3, color: "#E2B465" },
-    n10: { n: 3, color: "#E2B465" },
-    n11: { n: 3, color: "#E2B465" },
-    n12: { n: 3, color: "#E2B465" },
-    n13: { n: 3, color: "#E2B465" },
-    n14: { n: 3, color: "#E2B465" },
-    n15: { n: 3, color: "#E2B465" },
-    n16: { n: 3, color: "#E2B465" },
-    n17: { n: 3, color: "#E2B465" },
-    n18: { n: 3, color: "#E2B465" },
-    n19: { n: 3, color: "#E2B465" },
-    n20: { n: 3, color: "#E2B465" },
-    n21: { n: 3, color: "#E2B465" },
-    n22: { n: 3, color: "#E2B465" },
-    n23: { n: 3, color: "#E2B465" },
-    n24: { n: 3, color: "#E2B465" },
-  };
+const ff = (data) => {
   const selection = select(".testrtrrrrrrrrr");
+  const everything = selection.selectAll("*");
+  everything.remove();
   console.log({ selection });
   const container = selection
     .append("svg")

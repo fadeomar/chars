@@ -4,6 +4,7 @@ import KPIDiamond from "./components/KPIDiamond";
 import PDFTest from "./components/PDFTest";
 import * as d3 from "d3";
 import KPIWheel from "./components/KPIWheel";
+// import Wheel from "./components/Wheel";
 
 import FFF from "./components/KPIDiamond/FFF.";
 
@@ -25,8 +26,9 @@ function App() {
   return (
     <div className="App">
       {/* <KPIDiamond /> */}
-      <FFF />
-      {/* <KPIWheel /> */}
+      {/* <FFF /> */}
+      {/* <Wheel /> */}
+      <KPIWheel />
       {/* <PDFTest /> */}
       {/* <svg width="500" height="500">
         <DrilldownPie data={data(4)} x={250} y={250} />
