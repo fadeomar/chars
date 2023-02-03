@@ -26,9 +26,9 @@ function App() {
   return (
     <div className="App">
       {/* <KPIDiamond /> */}
-      {/* <FFF /> */}
+      <FFF />
       {/* <Wheel /> */}
-      <KPIWheel />
+      {/* <KPIWheel /> */}
       {/* <PDFTest /> */}
       {/* <svg width="500" height="500">
         <DrilldownPie data={data(4)} x={250} y={250} />

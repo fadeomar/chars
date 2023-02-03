@@ -1,5 +1,15 @@
 import { select } from "d3";
 
+// dashed circle code ==> fix the wheel
+// container
+// .append("circle")
+// .attr("cx", "200")
+// .attr("cy", "200")
+// .attr("r", "100")
+// .attr("fill", "pink")
+// .attr("stroke", "#A5A5A5")
+// .attr("stroke-dasharray", "6 6");
+
 const ff = (data) => {
   const selection = select(".testrtrrrrrrrrr");
   const everything = selection.selectAll("*");
@@ -1214,8 +1224,8 @@ const ff = (data) => {
     .attr("height", data.n8.n * 15 * 0.9)
     .attr("rx", "2")
     .attr("transform", () => {
-      const y = 469 - data.n8.n * 12;
-      const x = 222.6 + data.n8.n * 6.4;
+      const y = 469 - data.n8.n * 11.8;
+      const x = 222.6 + data.n8.n * 6.8;
       return `matrix(0.5 0.866025 0.866025 -0.5 ${y} ${x})`;
     })
     .attr("fill", data.n8.color || "#E2B465");
@@ -1352,6 +1362,208 @@ const ff = (data) => {
     .attr("d", "M138 308.59L138.189 288.346")
     .attr("stroke", "#A5A5A5")
     .attr("stroke-dasharray", "6 6");
+
+  // circles
+  // c1
+  container
+    .append("circle")
+    .attr("cx", "305")
+    .attr("cy", 122 - data.n1.circleN * 12.8333)
+    .attr("r", "6")
+    .attr("fill", data.n1.circleColor || "#3F4546");
+
+  // c2
+  container
+    .append("circle")
+    .attr("cx", "305")
+    .attr("cy", 140 + data.n2.circleN * 12.8333)
+    .attr("r", "6")
+    .attr("fill", data.n2.circleColor || "#3F4546");
+
+  // c3
+  container
+    .append("circle")
+    .attr("cx", "343")
+    .attr("cy", 122 - data.n3.circleN * 12.8333)
+    .attr("r", "6")
+    .attr("fill", data.n3.circleColor || "#3F4546");
+
+  // c4
+  container
+    .append("circle")
+    .attr("cx", "343")
+    .attr("cy", 140 + data.n4.circleN * 12.8333)
+    .attr("r", "6")
+    .attr("fill", data.n4.circleColor || "#3F4546");
+  // c5
+  container
+    .append("circle")
+    .attr("cx", 509 - data.n5.circleN * 11.5)
+    .attr("cy", "184.261")
+    .attr("r", "6")
+    .attr("transform", "rotate(150 486.261 184.261)")
+    .attr("fill", data.n5.circleColor || "#3F4546");
+  // c6
+  container
+    .append("circle")
+    .attr("cx", 413 + data.n6.circleN * 11.5)
+    .attr("cy", "215.261")
+    .attr("r", "6")
+    .attr("transform", "rotate(150 433.261 215.261)")
+    .attr("fill", data.n6.circleColor || "#3F4546");
+
+  // c7
+  container
+    .append("circle")
+    .attr("cx", "503.729")
+    .attr("cy", "215.895")
+    .attr("cx", 526 - data.n7.circleN * 11.5)
+    .attr("r", "6")
+    .attr("transform", "rotate(150 503.729 215.895)")
+    .attr("fill", data.n7.circleColor || "#3F4546");
+  // c8
+  container
+    .append("circle")
+    .attr("cy", "246.895")
+    .attr("cx", 429.5 + data.n8.circleN * 11.5)
+    .attr("r", "6")
+    .attr("transform", "rotate(150 450.729 246.895)")
+    .attr("fill", data.n8.circleColor || "#3F4546");
+  // c9
+  container
+    .append("circle")
+    .attr("cx", "484.734")
+    .attr("cy", 371.23 + data.n9.circleN * 11.5)
+    .attr("r", "6")
+    .attr("transform", "rotate(-60 484.734 371.272)")
+    .attr("fill", data.n9.circleColor || "#3F4546");
+
+  // c10
+  container
+    .append("circle")
+    .attr("cx", "440.259")
+    .attr("cy", 378 - data.n10.circleN * 11.5)
+    .attr("r", "6")
+    .attr("transform", "rotate(-60 440.259 345.594)")
+    .attr("fill", data.n10.circleColor || "#3F4546");
+
+  // c11
+  container
+    .append("circle")
+    .attr("cx", "465.734")
+    .attr("cy", 404 + data.n11.circleN * 11.5)
+    .attr("r", "6")
+    .attr("transform", "rotate(-60 465.734 401.272)")
+    .attr("fill", data.n11.circleColor || "#3F4546");
+
+  // c12
+  container
+    .append("circle")
+    .attr("cx", "421.259")
+    .attr("cy", 409 - data.n12.circleN * 11.5)
+    .attr("r", "6")
+    .attr("transform", "rotate(-60 421.259 375.594)")
+    .attr("fill", data.n12.circleColor || "#3F4546");
+
+  // c13
+  container
+    .append("circle")
+    .attr("cx", "342")
+    .attr("cy", 473.5 + data.n13.circleN * 12.8333)
+    .attr("r", "6")
+    .attr("fill", data.n13.circleColor || "#3F4546");
+
+  // c14
+  container
+    .append("circle")
+    .attr("cx", "342")
+    .attr("cy", 378 + data.n14.circleN * 12.8333)
+    .attr("r", "6")
+    .attr("fill", data.n14.circleColor || "#3F4546");
+  // c15
+  container
+    .append("circle")
+    .attr("cx", "305")
+    .attr("cy", 473.5 + data.n15.circleN * 12.8333)
+    .attr("r", "6")
+    .attr("fill", data.n15.circleColor || "#3F4546");
+  // c16
+  container
+    .append("circle")
+    .attr("cx", "306")
+    .attr("cy", 378 + data.n16.circleN * 12.8333)
+    .attr("r", "6")
+    .attr("fill", data.n16.circleColor || "#3F4546");
+
+  // c17
+  container
+    .append("circle")
+    .attr("cy", "411.895")
+    .attr("cx", 142 + data.n17.circleN * 11.5)
+    .attr("r", "6")
+    .attr("transform", "rotate(150 162.729 411.895)")
+    .attr("fill", data.n17.circleColor || "#3F4546");
+  // c18
+  container
+    .append("circle")
+    .attr("cy", "380.895")
+    .attr("cx", 237 - data.n18.circleN * 11.5)
+    .attr("r", "6")
+    .attr("transform", "rotate(150 215.729 380.895)")
+    .attr("fill", data.n18.circleColor || "#3F4546");
+
+  // c19
+  container
+    .append("circle")
+    .attr("cy", "379.895")
+    .attr("cx", 124 + data.n19.circleN * 11.5)
+    .attr("r", "6")
+    .attr("transform", "rotate(150 144.729 379.895)")
+    .attr("fill", data.n19.circleColor || "#3F4546");
+  // c20
+  container
+    .append("circle")
+    .attr("cy", "348.895")
+    .attr("cx", 219 - data.n20.circleN * 11.5)
+    .attr("r", "6")
+    .attr("transform", "rotate(150 197.729 348.895)")
+    .attr("fill", data.n20.circleColor || "#3F4546");
+
+  // c21
+  container
+    .append("circle")
+    .attr("cx", "133.254")
+    .attr("cy", 244 - data.n21.circleN * 11.5)
+    .attr("r", "6")
+    .attr("transform", "rotate(-60 133.254 209.898)")
+    .attr("fill", data.n21.circleColor || "#3F4546");
+
+  // c22
+  container
+    .append("circle")
+    .attr("cx", "177.729")
+    .attr("cy", 238 + data.n22.circleN * 11.5)
+    .attr("r", "6")
+    .attr("transform", "rotate(-60 177.729 235.576)")
+    .attr("fill", data.n22.circleColor || "#3F4546");
+
+  // c23
+  container
+    .append("circle")
+    .attr("cx", "151.259")
+    .attr("cy", 214 - data.n23.circleN * 11.5)
+    .attr("r", "6")
+    .attr("transform", "rotate(-60 151.259 179.594)")
+    .attr("fill", data.n23.circleColor || "#3F4546");
+
+  // c24
+  container
+    .append("circle")
+    .attr("cx", "195.734")
+    .attr("cy", 207 + data.n24.circleN * 11.5)
+    .attr("r", "6")
+    .attr("transform", "rotate(-60 195.734 205.272)")
+    .attr("fill", data.n24.circleColor || "#3F4546");
 };
 
 export default ff;
