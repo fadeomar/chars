@@ -3,7 +3,6 @@ import ff from "./ff";
 
 const FFF = () => {
   const ref = useRef();
-
   const data = {
     n1: { n: 1, color: "red", circleN: 3, circleColor: "#3F4546" },
     n2: { n: 3, color: "red", circleN: 3, circleColor: "#3F4546" },
