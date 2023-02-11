@@ -3,17 +3,16 @@ import { Page, Text, Image, Document, View } from "@react-pdf/renderer";
 import Cover from "./image10.png";
 import { styles } from "./styles";
 
+// pages
+
+import CoverPage from "./Pages/CoverPage";
+import Page1 from "./Pages/Page1";
 const PDFFile = ({ urls }) => {
   return (
     <Document>
-      <Page
-        style={styles.cover}
-        pageMode={"fullScreen"}
-        pageLayout={"singlePage"}
-      >
-        <Image src={Cover} />
-      </Page>
-      <Page style={styles.body}>
+      <CoverPage />
+      <Page1 />
+      {/* <Page style={styles.body}>
         <View style={styles.imgContainer}>
           {urls?.reportImg && (
             <Image style={styles.image} src={urls.reportImg} />
@@ -28,7 +27,7 @@ const PDFFile = ({ urls }) => {
             `${pageNumber} / ${totalPages}`
           }
         />
-      </Page>
+      </Page> */}
     </Document>
   );
 };

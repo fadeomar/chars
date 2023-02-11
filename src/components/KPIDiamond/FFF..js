@@ -18,7 +18,7 @@ const FFF = () => {
     n10: { n: 6, color: "#E2B465", circleN: 3, circleColor: "#3F4546" },
     n11: { n: 6, color: "green", circleN: 3, circleColor: "#3F4546" },
     n12: { n: 6, color: "#E2B465", circleN: 3, circleColor: "#3F4546" },
-    n13: { n: 6, color: "#E2B465", circleN: 3, circleColor: "#3F4546" },
+    n13: { n: 6, color: "#E2B465", circleN: 4, circleColor: "#3F4546" },
     n14: { n: 6, color: "#E2B465", circleN: 3, circleColor: "#3F4546" },
     n15: { n: 6, color: "gold", circleN: 3, circleColor: "#3F4546" },
     n16: { n: 6, color: "#E2B465", circleN: 3, circleColor: "#3F4546" },
