@@ -7,11 +7,14 @@ import { styles } from "./styles";
 
 import CoverPage from "./Pages/CoverPage";
 import Page1 from "./Pages/Page1";
+import PartHeadPage from "./Pages/PartHeadPage";
+
 const PDFFile = ({ urls }) => {
   return (
     <Document>
-      <CoverPage />
-      <Page1 />
+      {/* <CoverPage /> */}
+      {/* <Page1 /> */}
+      <PartHeadPage />
       {/* <Page style={styles.body}>
         <View style={styles.imgContainer}>
           {urls?.reportImg && (
